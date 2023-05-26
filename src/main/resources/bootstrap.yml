@@ -1,0 +1,15 @@
+server:
+  port: 9003
+spring:
+  application:
+    name: CallMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+      config:
+        enabled: true
+        prefixes: config
+        defaultContext: application
+        profileSeparator: '::'
+        format: YAML
